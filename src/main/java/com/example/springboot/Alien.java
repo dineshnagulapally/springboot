@@ -9,9 +9,18 @@ public class Alien {
     private int id;
     private String name;
     private String tech;
+    private Laptop laptop;
 
     public int getId() {
         return id;
+    }
+
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
     }
 
     public Alien() {
@@ -28,6 +37,7 @@ public class Alien {
 
     public void show(){
         System.out.println("Hello");
+        laptop.compile();
     }
 
     public void setName(String name) {
