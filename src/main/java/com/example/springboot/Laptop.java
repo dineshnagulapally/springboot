@@ -2,7 +2,7 @@ package com.example.springboot;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("lap")
 public class Laptop {
     private int id;
     private String brand;
