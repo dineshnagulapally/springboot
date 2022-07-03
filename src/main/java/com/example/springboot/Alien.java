@@ -1,8 +1,10 @@
 package com.example.springboot;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope(value = "prototype")
 public class Alien {
     private int id;
     private String name;
@@ -10,6 +12,10 @@ public class Alien {
 
     public int getId() {
         return id;
+    }
+
+    public Alien() {
+        System.out.println("object created");
     }
 
     public void setId(int id) {
